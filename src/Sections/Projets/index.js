@@ -4,7 +4,7 @@ import AwesomeSlider from "react-awesome-slider";
 import 'react-awesome-slider/dist/styles.css';
 import { projects } from "../../data";
 import wave from "../../assets/waves2.svg";
-import './index.css';   
+import '../../assets/css/index.css';   
 
 import "../../../node_modules/slick-carousel/slick/slick.css";
 import "../../../node_modules/slick-carousel/slick/slick-theme.css";
