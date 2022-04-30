@@ -139,10 +139,11 @@ const Row = styled.div`
 `;
 
 const Contact = () => {
-  return (<ContactSection>
+  return (
+  <ContactSection id="contact">
     <Title>Contactez moi</Title>
     <Icons>
-      <a href="https://www.linkedin.com/in/gomesjean/">
+      <a href="https://www.linkedin.com/in/gomesjean/" >
         <img src={Linkedin} alt="linkedin" />
       </a>
       <a href="https://github.com/GomesJ7">
