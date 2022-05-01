@@ -6,12 +6,12 @@ import White from "../../assets/blobWhite.png";
 import anneau from "../../assets/3dtube.png";
 
 const Competences = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding: 1rem 0;
+width: 100vw;
+position: relative;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
   `;
 
 const Title = styled.h1`

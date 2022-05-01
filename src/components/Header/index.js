@@ -4,14 +4,20 @@ import { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 
 const Headers = styled.header`
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 5rem;
-    background-color: var(--nav);
-    color: var(--white);
-    position: relative;
-    z-index: 500;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 1rem 5rem;
+background-color: var(--nav);
+color: var(--white);
+position: relative;
+z-index: 500;
+@media only Screen and (max-width: 64em) {
+  padding: 0.5rem 3rem;
+}
+@media only Screen and (max-width: 40em) {
+  padding: 0.5rem 1.5rem;
+}
 `;
 
 const Logo = styled.a`

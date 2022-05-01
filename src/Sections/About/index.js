@@ -4,11 +4,12 @@ import planete from "../../assets/planete.png";
 import styled from "styled-components";
 
 const AboutSection = styled.section`
-  width:100vw;
-  position:relative;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
+width: 100vw;
+position: relative;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
   background-color: var(--pink);
   `;
 
