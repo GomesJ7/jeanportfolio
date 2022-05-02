@@ -1,4 +1,3 @@
-// components du header pour le haut de page
 import logo from "../../assets/logo.png";
 import { useEffect, useRef, useState } from "react";
 import styled from "styled-components";

@@ -5,7 +5,7 @@ export const projects = [
         description1: "Star Drone est un projet réalisé en groupe de 2 au début de mon cursus en Année de Prépa.", 
         description2: "Le but de ce projet était de créer un site web d’e-commerce sur un thème de notre choix (les drones), tout en apprenant à utiliser la framework Laravel.", 
         description3: "Le site a été réalisé avec HTML, CSS, et Blade (PHP) pour les vues, MySQL pour la création d’un schéma de base de données, et Javascript pour ajouter des fonctionnalités Front.",
-        image: "./homeSD.PNG",
+        image: "../public/homeSD.PNG",
         alt: "drone",
       },
       {
