@@ -14,7 +14,7 @@ export const projects = [
         description1: "Vous avez du temps à perdre et vous êtes un fan de DragonBall? Alors DragonBall Clicker est fait pour vous!",
         description2: "DragonBall Clicker est un jeu de type clicker basé sur la gestion et le calcul de données monétaires sur le thème du manga DragonBall. Pour faire simple, plus tu cliques plus tu obtiens des points qui te permettront d'acheter des bonus.",
         description3: "Le jeu a été développé avec HTML et CSS et la gestion des données (sauvegarde et récupération) a été faite en Javascript",
-        image: "./dragonball.jpg",
+        image: "../dragonball.jpg",
         alt: "clickergame",
       },
       {
