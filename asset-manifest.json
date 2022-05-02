@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.js": "/jeanportfolio/static/js/main.88b6ca24.js",
+    "main.js": "/jeanportfolio/static/js/main.8df9f880.js",
     "static/css/103.d92bd5c4.chunk.css": "/jeanportfolio/static/css/103.d92bd5c4.chunk.css",
-    "static/js/103.62c62361.chunk.js": "/jeanportfolio/static/js/103.62c62361.chunk.js",
-    "static/js/959.af2bf879.chunk.js": "/jeanportfolio/static/js/959.af2bf879.chunk.js",
+    "static/js/103.e1bb81d2.chunk.js": "/jeanportfolio/static/js/103.e1bb81d2.chunk.js",
+    "static/js/959.ea9ce04c.chunk.js": "/jeanportfolio/static/js/959.ea9ce04c.chunk.js",
     "static/js/14.fb6831f9.chunk.js": "/jeanportfolio/static/js/14.fb6831f9.chunk.js",
     "static/js/34.9cff69de.chunk.js": "/jeanportfolio/static/js/34.9cff69de.chunk.js",
     "static/js/740.74aabfeb.chunk.js": "/jeanportfolio/static/js/740.74aabfeb.chunk.js",
@@ -21,16 +21,16 @@
     "static/media/icons-linkedin.svg": "/jeanportfolio/static/media/icons-linkedin.ada11cda991129bc91b79d2c7cee1066.svg",
     "static/media/waves.svg": "/jeanportfolio/static/media/waves.45e50e18f54731aeb45049f15ad30949.svg",
     "static/media/arrow-up.svg": "/jeanportfolio/static/media/arrow-up.65164624ca1539634ee30e63113402a1.svg",
-    "main.88b6ca24.js.map": "/jeanportfolio/static/js/main.88b6ca24.js.map",
+    "main.8df9f880.js.map": "/jeanportfolio/static/js/main.8df9f880.js.map",
     "103.d92bd5c4.chunk.css.map": "/jeanportfolio/static/css/103.d92bd5c4.chunk.css.map",
-    "103.62c62361.chunk.js.map": "/jeanportfolio/static/js/103.62c62361.chunk.js.map",
-    "959.af2bf879.chunk.js.map": "/jeanportfolio/static/js/959.af2bf879.chunk.js.map",
+    "103.e1bb81d2.chunk.js.map": "/jeanportfolio/static/js/103.e1bb81d2.chunk.js.map",
+    "959.ea9ce04c.chunk.js.map": "/jeanportfolio/static/js/959.ea9ce04c.chunk.js.map",
     "14.fb6831f9.chunk.js.map": "/jeanportfolio/static/js/14.fb6831f9.chunk.js.map",
     "34.9cff69de.chunk.js.map": "/jeanportfolio/static/js/34.9cff69de.chunk.js.map",
     "740.74aabfeb.chunk.js.map": "/jeanportfolio/static/js/740.74aabfeb.chunk.js.map",
     "783.86c2dd7a.chunk.js.map": "/jeanportfolio/static/js/783.86c2dd7a.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.88b6ca24.js"
+    "static/js/main.8df9f880.js"
   ]
 }
