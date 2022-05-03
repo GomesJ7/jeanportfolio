@@ -8,18 +8,15 @@ import "../../../node_modules/slick-carousel/slick/slick-theme.css";
 import './index.css'; 
 
 const Projet = styled.div`
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  width: 100vw;
-  height: 100vw;
-  margin
-  padding:5rem 0;
+width: 100vw;
+position: relative;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
   background-color: black;
 `;
 const Waves = styled.img`
-  margin-top: -11rem;
   width: 100%;
   height: auto;
 `;
@@ -28,7 +25,6 @@ const Title = styled.h1`
   color:whitesmoke;
   display: inline-block;
   font-size: calc(1rem + 1.5vw);
-  margin-top: 1rem;
   position: relative;
     content: "";
     height: 1px;
