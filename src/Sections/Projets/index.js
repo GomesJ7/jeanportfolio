@@ -36,10 +36,12 @@ const Title = styled.h1`
 `;
 
 const Carousal = styled.div`
-  width: 50vw;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
+  position: relative;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+  height: 80%;
+  width: 80%;
   @media only Screen and (max-width: 40em) {
     width: 90vw;
     .slick-slider .slick-arrow {
