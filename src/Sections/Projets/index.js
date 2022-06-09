@@ -112,7 +112,7 @@ const Projets = () => {
       </Carousal>
       <a href="https://github.com/GomesJ7" target="_blank">
         <Button>
-            Voir les projets sur GIT
+            Voir les projets sur GIT 
       </Button>
       </a>
       
