@@ -39,3 +39,16 @@
     opacity: 1;
     background-color: #e5a1f8;;
 }
+
+.button {
+    background-color: whitesmoke;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    color: var(--purple);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    left: 25%;
+    position: relative;
+    margin-bottom: 1rem;
+}

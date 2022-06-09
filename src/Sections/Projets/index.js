@@ -110,9 +110,12 @@ const Projets = () => {
         </Slider>
         
       </Carousal>
-      <Button href='https://github.com/GomesJ7'target="_blank">
+      <a href="https://github.com/GomesJ7" target="_blank">
+        <Button>
             Voir les projets sur GIT
       </Button>
+      </a>
+      
   </Projet>
   );
 };
