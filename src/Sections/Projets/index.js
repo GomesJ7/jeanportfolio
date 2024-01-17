@@ -1,6 +1,7 @@
 import React, { lazy } from "react";
 import styled from "styled-components";
 import wave from "../../assets/waves2.svg";
+import project1 from  "../../assets/project2.jpg";
 import { projects } from "./data";
 import Slider from "react-slick";
 import "../../../node_modules/slick-carousel/slick/slick.css";
@@ -100,7 +101,7 @@ const Projets = () => {
         {projects.map((project) => (
             <div data-src={project.image} className='project' alt={project.alt}>
               <div className='middle'>
-                <div className='project-title'>{project.title}</div>
+                <div img src={project1} className='project-title'>{project.title}</div>
                 <div className='description'>{project.description1}</div>
                 <div className='description'>{project.description2}</div>
                 <div className='description'>{project.description3}</div>

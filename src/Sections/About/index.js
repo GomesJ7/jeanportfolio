@@ -102,9 +102,8 @@ const About = () => {
             <img src={planete} alt="planete" /> 
           </Planete>
           <Text>
-            Actuellement étudiant à l'ETNA (L'école des technologies numérique avancée) en tant
-            que chargé de projects informatiques. Passionné d'informatique à travers ce portfolio
-            vous retrouverez mes différents projects réaliser.
+            Actuellement étudiant en BTS Sio option SLAM, je suis passionné d'informatique à travers ce portfolio
+            vous retrouverez mes différents projects réalisé et mes competences.
           </Text>
         </AboutText>
       </Content>
