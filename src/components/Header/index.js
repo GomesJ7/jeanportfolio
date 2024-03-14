@@ -113,10 +113,10 @@ const Header = () => {
       <h3>Jean GOMES</h3>
     </Logo>
       <Nav>
-          <a href="#home">Accueuil</a>
+          <a href="#home">Accueil</a>
           <a href="#about">Moi</a>
-          <a href="#projects">Projets</a>
-          <a href="#competences">Compétences</a>
+          <a href="#experiences">Experiences</a>
+          <a href="#competences">Compétences & Projets</a>
           <a href="#contact">
               <Button>Contactez moi</Button>
           </a>

@@ -3,7 +3,7 @@ import Hero from "../Sections/Hero";
 import About from "../Sections/About";
 import Contact from "../Sections/Contact";
 import Competences from "../Sections/Competences";
-import Projets from "../Sections/Projets";
+import Experiences from "../Sections/Experiences";
 import styled from "styled-components";
 
 const Container = styled.div`
@@ -18,7 +18,7 @@ const Home = () => {
     <Container>
       <Hero />
       <About />
-      <Projets />
+      <Experiences />
       <Competences />
       <Contact />
       

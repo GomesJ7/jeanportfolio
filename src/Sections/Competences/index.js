@@ -105,9 +105,23 @@ const PurpleBlob = styled.div`
     z-index: 6;
 `;
 
+const Button = styled.button`
+background-color: var(--purple);
+padding: 0.5rem 1rem;
+border-radius: 20px;
+color: whitesmoke;
+font-weight: 600;
+cursor: pointer;
+transition: all 0.2s;
+left: 25%;
+position: relative;
+margin-bottom: 1rem;
+`;
+
 const CompetenceSection = () => {
   return (<Competences id="competences">
-    <Title>Mes Compétences</Title>
+    <Title>Compétences et Projets</Title>
+    <br></br>
     <Content>
       <Texte>
         <strong>Développement Web: </strong>
@@ -115,17 +129,29 @@ const CompetenceSection = () => {
         <strong>Framework:</strong> 
         Arduino, Raspberry, Laravel, React.js<br></br>
         <strong>Développement d'application:</strong>
-        C, Python, Bash/shell, android studio<br></br>
+        JAVA, Kotlin, C, Python, Bash/shell, android studio<br></br>
         <strong>Logiciel: </strong>
         Oracle Vm, MySQL, Figma, Workbench<br></br>
         <strong>Gestion de bases de données: </strong>
         MySQL, MariaDB<br></br>
         <strong>Système d'Exploitation: </strong>
-        Windows, Linux
+        Windows, Linux<br></br>
+        <strong>Versionning: </strong>
+        GitHub, GitLab, Bitbucket
+      </Texte> 
+      <a href="https://github.com/GomesJ7" target="_blank">
+        <Texte>
+          <strong>Projets:</strong>
         </Texte>
-        <Image>
+        <Button>
+            Voir les projets sur Github
+      </Button>
+      <Image>
         <img src={fusee} alt="fusée"/>
       </Image>
+      </a>
+
+
     </Content>
     <Blobs>
             <WhiteBlob>

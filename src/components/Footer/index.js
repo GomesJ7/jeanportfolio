@@ -19,7 +19,7 @@ const FOOTER = styled.footer`
 
 const Footer = () => {
   return (<FOOTER>
-    © 2022 Jean Gomes
+    © 2024 Jean Gomes
     </FOOTER>
     );
 };
