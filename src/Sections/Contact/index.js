@@ -7,15 +7,23 @@ import emailjs from 'emailjs-com';
 function sendEmail(e){
   e.preventDefault();
 
-  emailjs.sendForm(
-  "service_eix7sz4",
-  "template_nyz4vbu",
-  e.target,
-  "yo0atwo9odr6JB0b_"
-  ).then(res=>{
+  const name = e.target.name.value;
+  const email = e.target.email.value;
+  const message = e.target.message.value;
+
+  if (name && email && message) {
+    emailjs.sendForm(
+      "service_eix7sz4",
+      "template_nyz4vbu",
+      e.target,
+      "yo0atwo9odr6JB0b_"
+    ).then(res=>{
       console.log(res);
-      alert('Votre message à bien été envoyez !')
-  }).catch(err=> console.log(err))
+      alert('Votre message a bien été envoyé !')
+    }).catch(err=> console.log(err));
+  } else {
+    alert("Veuillez remplir tous les champs du formulaire avant de l'envoyer.");
+  }
 }
 
 const ContactSection = styled.div`
@@ -28,11 +36,11 @@ const ContactSection = styled.div`
   justify-content: center;
 `;
 
-const Icons =styled.div`
-display: inline;
-margin-bottom: 3rem;
-margin-top: 1rem;
-  a{
+const Icons = styled.div`
+  display: inline;
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+  a {
     &:not(:last-child) {
       margin-right: 2rem;
     }
@@ -41,10 +49,11 @@ margin-top: 1rem;
         filter: invert(20%) sepia(100%) saturate(500%) hue-rotate(580deg)
           brightness(100%) contrast(97%);
       }
-  }
-  img{
-    width: 3rem;
-    height: 3rem;
+    }
+    img {
+      width: 3rem;
+      height: 3rem;
+    }
   }
 `;
 
@@ -123,7 +132,6 @@ const Form = styled.form`
       transform: scale(0.9);
     }
   }
-  
 `;
 
 const Row = styled.div`
@@ -140,33 +148,34 @@ const Row = styled.div`
 
 const Contact = () => {
   return (
-  <ContactSection id="contact">
-    <Title>Contactez moi</Title>
-    <Icons>
-      <a href="https://www.linkedin.com/in/gomesjean/" >
-        <img src={Linkedin} alt="linkedin" />
-      </a>
-      <a href="https://github.com/GomesJ7">
-        <img src={Github} alt="github" />
-      </a>
-      <a href='mailto:jean.patraogomes@gmail.com'>
-        <img src={Mail} alt="email" />
-      </a>
-    </Icons>
-    <Form
-    netlify
-    onSubmit = {sendEmail}>
-      <Row>
-        <input name="name" type="text" placeholder="nom et prénom" />
-      <input name="email" type="email" placeholder="entrez votre mail" />
-      </Row>
-      <textarea name="message" cols="30" rows="2" placeholder="message"></textarea>
-      <div>
-        <button type='submit'>Envoyez</button>
-      </div>
-    </Form>
+    <ContactSection id="contact">
+      <Title>Contactez moi</Title>
+      <Icons>
+        <a href="https://www.linkedin.com/in/gomesjean/">
+          <img src={Linkedin} alt="linkedin" />
+        </a>
+        <a href="https://github.com/GomesJ7">
+          <img src={Github} alt="github" />
+        </a>
+        <a href='mailto:jean.patraogomes@gmail.com'>
+          <img src={Mail} alt="email" />
+        </a>
+      </Icons>
+      <Form
+        netlify
+        onSubmit={sendEmail}
+      >
+        <Row>
+          <input name="name" type="text" placeholder="Nom et prénom" />
+          <input name="email" type="email" placeholder="Entrez votre mail" />
+        </Row>
+        <textarea name="message" cols="30" rows="2" placeholder="Message"></textarea>
+        <div>
+          <button type='submit'>Envoyer</button>
+        </div>
+      </Form>
     </ContactSection>
-    );
+  );
 };
 
 export default Contact;

@@ -102,8 +102,9 @@ const About = () => {
             <img src={planete} alt="planete" /> 
           </Planete>
           <Text>
-            Actuellement étudiant en BTS Sio option SLAM, je suis passionné d'informatique à travers ce portfolio
-            vous retrouverez mes différents projects réalisé et mes competences.
+          Actuellement étudiant en BTS SIO option SLAM, je suis passionné d'informatique. 
+          À travers ce portfolio développé en React (v.18), vous retrouverez mes différents projets réalisés, 
+          mes expériences et mes compétences.
           </Text>
         </AboutText>
       </Content>
