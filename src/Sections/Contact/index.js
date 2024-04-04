@@ -4,28 +4,6 @@ import Mail from "../../assets/icons-gmail.svg";
 import styled from "styled-components";
 import emailjs from 'emailjs-com';
 
-function sendEmail(e){
-  e.preventDefault();
-
-  const name = e.target.name.value;
-  const email = e.target.email.value;
-  const message = e.target.message.value;
-
-  if (name && email && message) {
-    emailjs.sendForm(
-      "service_eix7sz4",
-      "template_nyz4vbu",
-      e.target,
-      "yo0atwo9odr6JB0b_"
-    ).then(res=>{
-      console.log(res);
-      alert('Votre message a bien été envoyé !')
-    }).catch(err=> console.log(err));
-  } else {
-    alert("Veuillez remplir tous les champs du formulaire avant de l'envoyer.");
-  }
-}
-
 const ContactSection = styled.div`
   width: 100vw;
   padding: calc(2.5rem + 2.5vw) 0;
@@ -147,6 +125,28 @@ const Row = styled.div`
 `;
 
 const Contact = () => {
+  function sendEmail(e) {
+    e.preventDefault();
+
+    const name = e.target.name.value;
+    const email = e.target.email.value;
+    const message = e.target.message.value;
+
+    if (name && email && message) {
+      emailjs.sendForm(
+        "service_prawfyt",
+        "template_nyz4vbu",
+        e.target,
+        "yo0atwo9odr6JB0b_"
+      ).then(res=>{
+        console.log(res);
+        alert('Votre message a bien été envoyé !')
+      }).catch(err=> console.log(err));
+    } else {
+      alert("Veuillez remplir tous les champs du formulaire avant de l'envoyer.");
+    }
+  }
+
   return (
     <ContactSection id="contact">
       <Title>Contactez moi</Title>
@@ -171,7 +171,7 @@ const Contact = () => {
         </Row>
         <textarea name="message" cols="30" rows="2" placeholder="Message"></textarea>
         <div>
-          <button type='submit'>Envoyer</button>
+          <button type="submit" onClick={sendEmail}>Envoyer</button>
         </div>
       </Form>
     </ContactSection>
