@@ -127,7 +127,7 @@ const CompetenceSection = () => {
         <strong>Développement Web: </strong>
          HTML5, CSS, Javascript, PHP, Manifest.json<br></br>
         <strong>Framework:</strong> 
-        Arduino, Raspberry, Laravel, React.js<br></br>
+        Arduino, Raspberry, Laravel, Symfony, React.js<br></br>
         <strong>Développement d'application:</strong>
         JAVA, Kotlin, C, Python, Bash/shell, android studio<br></br>
         <strong>Logiciel: </strong>
