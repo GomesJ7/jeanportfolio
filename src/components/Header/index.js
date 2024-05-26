@@ -1,5 +1,4 @@
 import logo from "../../assets/logo.png";
-import { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 
 const Headers = styled.header`
