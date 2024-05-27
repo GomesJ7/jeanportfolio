@@ -34,9 +34,15 @@ const Title = styled.h1`
 `;
 
 const Content = styled.div`
-  display:flex;
-  position:relative;
-  margin-top: 3rem;
+display: flex;
+justify-content: space-between;
+font-size: 1rem;
+color: var(--black);
+line-height: 1.6;
+margin-bottom: 20px;
+padding: 10px;
+border-radius: 8px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   `;
 
 const Texte = styled.div`
@@ -102,7 +108,7 @@ const PurpleBlob = styled.div`
     width: camc(15% + 15vw);
     position: absolute;
     right: 0;
-    z-index: 6;
+    z-index: 3;
 `;
 
 const Button = styled.button`
@@ -116,6 +122,11 @@ transition: all 0.2s;
 left: 25%;
 position: relative;
 margin-bottom: 1rem;
+`;
+
+const LienProjets = styled.div`
+displpay:flex;
+justify-content: center;
 `;
 
 const CompetenceSection = () => {
@@ -138,20 +149,27 @@ const CompetenceSection = () => {
         Windows, Linux<br></br>
         <strong>Versionning: </strong>
         GitHub, GitLab, Bitbucket
+      </Texte>
+      <Texte>
+        <strong>Projets:</strong>
       </Texte> 
+      <LienProjets>
       <a href="https://github.com/GomesJ7" target="_blank">
-        <Texte>
-          <strong>Projets:</strong>
-        </Texte>
         <Button>
             Voir les projets sur Github
-      </Button>
-      <Image>
-        <img src={fusee} alt="fusée"/>
-      </Image>
+        </Button>
+      </a> <br/>
+      <a href="https://drive.google.com/drive/folders/1cIExCIH4cmYXCL-aeBwuVGxWOJRqASqZ">
+        <Button>
+            Documentation Projets 
+        </Button>
       </a>
+      </LienProjets>
 
-
+        <Image>
+          <img src={fusee} alt="fusée"/>
+        </Image>
+        
     </Content>
     <Blobs>
             <WhiteBlob>
