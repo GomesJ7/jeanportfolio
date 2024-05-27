@@ -8,14 +8,16 @@ import Page from "../../assets/pageWeb.svg";
 const Herosection = styled.div`
     width: 100vw;
     height: 45vw;
-    background-color: var(--black);
+    background-color: black;
     dsiplay: flex;
     justify-content: center;
     position:relative;
+    
 `;
 
 const Blobs = styled.div`
-    width:100%;
+    width:50%;
+    heigth:50%;
     position:absolute;
     right: 0;
 `;
@@ -29,11 +31,11 @@ const PinkBlob = styled.div`
 `;
 
 const WhiteBlob = styled.div`
-    width: camc(20% + 20vw);
+    width: camc(10% + 10vw);
     position: absolute;
     right: 0;
     top: calc(3.5rem + 3.45vw);
-    z-index: 6;
+    z-index: 2;
 `;
 
 const PurpleBlob = styled.div`
@@ -41,7 +43,7 @@ const PurpleBlob = styled.div`
     position: absolute;
     right: 0;
     top: calc(5rem + 5vw);
-    z-index: 6;
+    z-index: 3;
 `;
 
 const MainContent = styled.div`
@@ -59,7 +61,7 @@ const LeftBlock = styled.div`
     line-height: 1.5;
     color: var(--white);
   position: relative;
-  z-index: 15;
+  z-index: 7;
   @media only Screen and (max-width: 48em) {
     width: 80%;
     text-align: center;
@@ -77,7 +79,7 @@ const PageWeb = styled.img`
     max-width: 90%;
     width: calc(30% + 20vw);
     height: auto;
-    z-index: 7;
+    z-index: 5;
     @media only Screen and (max-width: 48em) {
         align-self: flex-start;
         position: absolute;
@@ -86,7 +88,8 @@ const PageWeb = styled.img`
         opacity: 0.5;
       }
       @media only Screen and (max-width: 45em) {
-        display: none;`;
+        display: none;
+    }`;
 
 const Topi = styled.div`
     display:flex;

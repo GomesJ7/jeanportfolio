@@ -5,6 +5,7 @@ import Contact from "../Sections/Contact";
 import Competences from "../Sections/Competences";
 import Experiences from "../Sections/Experiences";
 import styled from "styled-components";
+import Veille from "../Sections/Veille/veille";
 
 const Container = styled.div`
       dsiplay: flex;
@@ -20,6 +21,7 @@ const Home = () => {
       <About />
       <Experiences />
       <Competences />
+      <Veille />
       <Contact />
       
     </Container>
