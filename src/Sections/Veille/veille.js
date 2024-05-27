@@ -104,7 +104,7 @@ const Info = styled.div`
 
 function Veille() {
   return (
-    <VeilleT>
+    <VeilleT id='veille'>
       <Title>Veille Technologique</Title>
       <Intro>
         <Paragraph>
