@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import wave from "../../assets/waves2.svg";
 
 const Experience = styled.div`
   width: 100vw;
@@ -9,39 +8,48 @@ const Experience = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: black;
+`;
+
+const Content = styled.div`
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  color: var(--black);
+  line-height: 1.6;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 `;
 
 const Formations = styled.div`
   flex: 1;
   font-size: calc(0.5rem + 1vw);
   line-height: 1.5;
-  color: var(--white);
-  padding-right: 1rem;
-  border-right: 5px solid var(--black);
-  background-color: var(--purple);
-  border-radius: 15px; /* Ajout de border-radius */
-  margin: 15px; /* Ajout de marges pour décoller des limites de la page */
-`;
+  color: var(--black);
+  padding-left: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 15px; 
+  margin: 15px; 
+  `;
 
 const Exp = styled.div`
   flex: 1;
   font-size: calc(0.5rem + 1vw);
   line-height: 1.5;
-  color: var(--white);
+  color: var(--black);
   padding-left: 1rem;
-  background-color: var(--purple);
-  border-radius: 15px; /* Ajout de border-radius */
-  margin: 15px; /* Ajout de marges pour décoller des limites de la page */
-`;
-const Waves = styled.img`
-  width: 100%;
-  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 15px; 
+  margin: 15px; 
 `;
 
 const Title = styled.h1`
 text-align: center;
-color: whitesmoke;
+color: var(--black);
 font-size: calc(1rem + 1.5vw);
 margin-bottom: 1rem;
 position: relative;
@@ -60,7 +68,7 @@ display: inline-block;
 
 const Titre = styled.h3`
 text-align: center;
-color: whitesmoke;
+color: var(--black);
 font-size: calc(1rem + 1.5vw);
 margin-bottom: 1rem;
 position: relative;
@@ -79,26 +87,32 @@ display: inline-block;
 const Eperiences = () => {
   return (
     <Experience id="experiences">
-      <Waves src={wave} alt="waves" />
       <Title>Experiences</Title>
       <br></br><br></br><br></br><br></br>
-      <div style={{ display: "flex", width: "100%" }}>
+      <Content>
         <Formations>
           <Titre>Formations/Diplômes</Titre><br></br><br></br>
-          2023 - 2024 GEFOR - Paris 1er BTS Services Informatiques aux Organisations - Option SLAM<br></br><br></br>
-          2021 - 2023 ETNA - Ivry-sur-Seine - Chargé de projet informatique Titre RNCP Niveau 5 EU (Bac +2)<br></br><br></br>
-          2020 - 2021 Université Gustave Eiffel - Champs-sur-Marne -L1 Physique-Chimie/ Sciences de l'ingénieur<br></br><br></br>
-          2017 - 2020 Lycée Martin Luther King - Bussy-Saint-Georges - Bac STI2D option SIN<br></br>
+          <strong>2023 - 2024</strong> <br/>
+          GEFOR - Paris 1er BTS Services Informatiques aux Organisations - Option SLAM<br></br><br></br>
+          <strong>2021 - 2023</strong> <br/>
+          Etna - Ivry-sur-Seine - Chargé de projet informatique Titre RNCP Niveau 5 EU (Bac +2)<br></br><br></br>
+          <strong>2020 - 2021</strong> <br/>
+           Université Gustave Eiffel - Champs-sur-Marne -L1 Physique-Chimie/ Sciences de l'ingénieur<br></br><br></br>
+          <strong>2019 - 2020</strong> <br/> 
+          Lycée Martin Luther King - Bussy-Saint-Georges - Bac STI2D option SIN<br></br>
         </Formations>
         <br></br>
         
         <Exp>
           <Titre>Experiences Professionnelles</Titre><br></br><br></br>
-          Fedhubs GOTHAM - Novembre 2023 & Février 2024 - Développeur Backend (Stage)<br></br><br></br>
-          DOOH IT - Août 2022 - Avril 2023 Développeur Full Stack (Contrat d’alternance)<br></br><br></br>
-          ATOS (BULL) - Mars 2017 - Stage Ingénieur système embarqué Découverte et apprentissage théorique des bases du métier<br></br>
+           <strong>Novembre 2023 & Février 2024</strong><br/> 
+           Fedhubs GOTHAM  Développeur Backend (Stage)<br></br><br></br>
+           <strong>Août 2022 - Avril 2023</strong><br/>
+           DOOH IT  Développeur Full Stack (Contrat d’alternance)<br></br><br></br>
+           <strong>Mars 2017 -</strong><br/>
+           ATOS (BULL)  Stage Ingénieur système embarqué Découverte et apprentissage théorique des bases du métier<br></br>
         </Exp>
-      </div>
+      </Content>
     </Experience>
   );
 };

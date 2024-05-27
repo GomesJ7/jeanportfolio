@@ -10,7 +10,6 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-  background-color: var(--pink);
   `;
 
 const Waves = styled.img`
