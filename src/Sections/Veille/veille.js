@@ -9,6 +9,7 @@ const VeilleT = styled.div`
 `;
 
 const Title = styled.h1`
+z-index: 6;
 color: #0a0b10;
 display: inline-block;
 font-size: calc(1rem + 1.5vw);
