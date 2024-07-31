@@ -159,11 +159,6 @@ const CompetenceSection = () => {
             Voir les projets sur Github
         </Button>
       </a> <br/>
-      <a href="https://drive.google.com/drive/folders/1cIExCIH4cmYXCL-aeBwuVGxWOJRqASqZ">
-        <Button>
-            Documentation Projets 
-        </Button>
-      </a>
       </LienProjets>
 
         <Image>
