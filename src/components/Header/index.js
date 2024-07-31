@@ -146,7 +146,6 @@ const Header = () => {
         <a href="#about" onClick={toggleMenu}>Moi</a>
         <a href="#experiences" onClick={toggleMenu}>Experiences</a>
         <a href="#competences" onClick={toggleMenu}>Compétences & Projets</a>
-        <a href="#veille" onClick={toggleMenu}>Veille Technologique</a>
         <a href="#contact" onClick={toggleMenu}>
           <Button>Contactez moi</Button>
         </a>
